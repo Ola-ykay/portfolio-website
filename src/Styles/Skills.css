@@ -1,0 +1,83 @@
+.skills{
+    margin-top: 1rem;
+   
+   }
+   
+   .skills-sec{
+   margin-top: 2rem;
+     padding:0 50px;
+       height: fit-content;
+     text-indent: 1rem;
+     line-height: 25px; 
+     
+   }
+   
+   .skills-sec h2{
+     font-size: 1.5rem;
+      color: #002147;
+     
+   }
+   .line{
+    width: 3rem;
+     background: #007FFF;
+     height: 2px;
+     display: inline-block;
+     text-align: center;
+     margin-right: 1rem;
+   }
+   
+   .my-skills{
+     
+    display: flex;
+      justify-content: center;
+     align-items: center;
+   flex-wrap: wrap;
+     row-gap: 1rem;
+   background: #fff;
+       border-radius: 15px;
+     padding: 60px;
+      text-indent: 1rem;
+   /*   font-family: 'Roboto', sans-serif; */
+     margin: 2rem 3rem;
+     line-height: 25px;
+   }
+   
+   .skill-logo{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+   width: 40%;
+     height: 150px;
+     align-items: center;
+     color: #002147;
+   }
+   
+   .skill-logo p{
+     font-size: 1rem;
+     font-weight:bold;
+     margin-right: 1rem;
+   }
+   
+    .skill-logo p:hover{
+       font-size: 1.2rem;
+     }
+   
+   @media screen and (max-width: 768px) {
+     .skills-sec{
+        text-align: center;
+     }
+   .my-skills{
+     padding:5px;
+      margin: 2rem 1rem;
+       justify-content: center;
+       flex-wrap: wrap;
+   }
+     
+     .skill-logo p{
+     font-size: .75rem;
+     }
+   
+     .skill-logo p:hover{
+       font-size: .9rem;
+     }
+   }

@@ -1,0 +1,128 @@
+.home-sec{
+    margin-top: .9rem;
+    padding:0 90px;
+     background: linear-gradient(
+        to left,
+        rgba(255, 255, 255, 0.4),
+        rgba(238, 238, 238, 0.9)
+      ),
+      url("../Images/whiteb.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: fit-content;
+    display: flex;
+  /*   gap: 8rem; */
+  /*   align-items: center; */
+    justify-content: space-evenly;
+    height: 550px;
+   
+  }
+  .home-details{
+     width: 40%;
+  /*   height: 290px; */
+  }
+  
+  .home-sec h1{
+    color: #0C2340;
+  /*  font-family: 'Dancing Script', cursive; */
+    font-family: 'Satisfy', cursive;
+    margin-top: 5rem;
+    padding: 20px 0;
+    font-size: 2rem;
+  }
+  .typewriter{
+    color: #800022;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 10px 0;
+    
+  }
+  .home-sec p{
+    color: #0C2340;
+  /*   line-height: 20px; */
+    padding: 10px 0 25px;
+    font-size: 1.1rem;
+    max-width: 30rem;
+  /*   font-family: 'Roboto', sans-serif; */
+  }
+  
+  .home-links a{
+    display: flex;
+    background: transparent;
+    border:2px solid #0C2346;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    color: #0C2340;
+    transition: transform 0.5s; 
+    cursor: pointer;
+  }
+  
+  .home-links a:hover{
+    background: #A82548;
+    color: #fff;
+    border: none;
+     transform: translateY(-5px);
+    
+  }
+  
+  .home-links{
+      display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+  /*   font-size: 3rem; */
+  }
+  
+  .my-image img{
+    margin-top: 6rem;
+    border: 1px solid transparent;
+    border-radius: 50%;
+  /*     object-fit: cover; */
+  /*   height: 350px; */
+    width: 100%;
+  }
+  
+  /* Intro responsiveness */
+   @media screen and (max-width: 768px) {
+     .home-sec{
+       margin-top: -1rem;
+       padding: 0 30px;
+        display: flex;
+       flex-direction: column;
+       height: 100vh;
+        align-items: center;
+      
+     }
+  
+     .home-details{
+       margin-top: 2rem;
+       width: 100%;
+  justify-content: space-between;
+      align-items: stretch
+     }
+     
+  .home-sec h1{
+    max-width: 100%;
+    font-size: 1.3rem;
+    padding: 5px 0;
+  }
+  
+     .typewriter{
+       font-size: 1rem;
+     }
+  
+     .home-sec p{
+       font-size: 1rem;
+       padding-bottom: 20px;
+     }
+  
+     .home-links{
+       width: 250px;
+     }
+     .my-image img{
+       margin-top: 1rem;
+      width: 100%;
+      height: 200px
+     }
+   }

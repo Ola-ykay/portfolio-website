@@ -1,0 +1,145 @@
+header{
+    display: flex;
+      align-items: center;
+      justify-content: right;
+      margin-top: .4rem;
+      width: 100%;
+      height: 60px;
+      border-radius: 30px;
+    
+      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+      background: #fff;
+      z-index: 1;
+      opacity: 1;
+      
+     
+    }
+    
+    .logo{
+   font-weight: bolder;
+      margin-right: 43rem;
+    }
+    
+     a{
+      text-decoration: none;
+      padding: 10px;
+      font-size: 1.4rem;
+       color: #000;
+    }
+    
+    .nav-menu{
+      display: flex;
+      list-style-type: none;
+      
+     
+    }
+    
+    .nav-item{
+      margin-right: 5rem;
+    }
+    
+    .nav-item a{
+      border: 2px solid;
+      border-image: repeating-linear-gradient(135deg,	#1F75FE 0 10px, #1F75FE 0 30px) 15;
+      mask: 
+        conic-gradient(from 180deg at top 8px right 8px, #0000 90deg,#000 0)
+         var(--_i,200%) 0  /200% var(--_i,8px) border-box no-repeat,
+        conic-gradient(at bottom 5px left  8px,  #0000 90deg,#000 0)
+         0   var(--_i,200%)/var(--_i,8px) 200% border-box no-repeat,
+        linear-gradient(#000 0 0) padding-box no-repeat;
+      transition: .3s, -webkit-mask-position .3s .3s;
+     padding: 4px;
+     font-size: .95rem;
+    } 
+    .nav-item a:hover{
+      --_i: 100%;
+      transition: .3s, -webkit-mask-size .3s .3s;
+    }
+    
+    .active {
+      color:#0080FE;
+    }
+    
+    .nav-mobile{
+      display: none;
+      color: #3d3d3d;
+      font-weight: 800;
+    }
+    
+    /* Navbar responsiveness */
+      @media screen and (max-width: 768px) {
+    header{
+      position: fixed;
+      top: 1%;
+      margin-bottom: 2rem;
+    /*    height: 60px; */
+      z-index: 2;
+    }
+        
+       .nav-menu{
+         position: absolute;
+          right: -100%;
+         top: -11%;
+        display: flex;
+        flex-direction: column;
+         gap: 3rem;
+        text-align: center;
+         height: 100vh;
+         width: 100%;
+         background: #0C2340;
+         z-index: 90;
+    padding: 0px 10px;
+          transition: right 0.5s ease-out;
+         
+       }
+    .nav-mobile{
+      display: block;
+      padding: 0 50px;
+      color: #2D68C4;
+      cursor: pointer;
+      z-index: 100;
+      
+      
+    }
+     .nav-menu.click{
+        right: 1px;
+      }
+    
+         .nav-item{
+           padding: 10px 0;
+      }
+    
+        .nav-item a{
+          color: #fff;
+          font-size: 1.3rem;
+        margin-left: 3.5rem;
+          border-image: repeating-linear-gradient(135deg,	#fff 0 10px, #fff 0 30px) 15;
+        }
+    
+        .nav-item:first-child {
+        margin-top: 7rem;
+      }
+    
+        .logo{
+          margin-right: 17rem;
+      
+        }
+          
+      }
+    
+    @media screen and (max-width: 1000px){
+      .logo{
+        margin-right: 20rem;
+      }
+    }
+    
+    @media screen and (max-width: 420px) {
+      .logo{
+        margin-right: 10rem;
+      }
+    
+      header{
+        margin-top: 0;
+       
+      }
+    }
