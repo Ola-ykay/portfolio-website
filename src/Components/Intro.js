@@ -4,12 +4,9 @@ import Typed from 'react-typed';
 import '../Styles/Intro.css';
 import { motion } from 'framer-motion';
 import myImage from '../Images/myImage.png';
-// import { Helmet } from "react-helmet-async";
-
 
 const Intro = () => {
   return (
-   
     <section className='home-sec' id='home'>
       
       <motion.div className='home-details' initial={{opacity:0, x:-150}}
