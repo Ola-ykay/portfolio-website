@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
-import Typed from 'react-typed';
+// import Typed from 'react-typed';
 import '../Styles/Intro.css';
 import { motion } from 'framer-motion';
 import myImage from '../Images/myImage.png';
@@ -15,7 +15,7 @@ const Intro = () => {
         <h1>Hello!
           <span> I'm Olayinka</span> &#128075;,
         </h1>
-        <div className="typewriter">
+        {/* <div className="typewriter">
           <Typed
             strings={["I'm a Frontend Developer."]}
             typeSpeed={80}
@@ -23,7 +23,7 @@ const Intro = () => {
             loop
 
           />
-        </div>
+        </div> */}
         <div className='intro-sec'>
           <p>
             A Software Engineer passionate about creating interactive applications and experiences on the web.
