@@ -34,13 +34,13 @@ import clock from '../Images/clock.png';
       <img src= {asso} alt='' />
         <h3>Association Website</h3>
       <p>This is an association website which was developed with Reactjs. It gives detailed information about the association and has different layout which are the Home, About, Gallery, Library and Contact. </p>
-        <a href='https://association-web-mj66-ola-ykay.vercel.app/' className='project-link'> 
+        <a href='https://association-web-mj66-ola-ykay.vercel.app/' className='project- link'> 
           <FiExternalLink /> 
         </a>
       </motion.div>
 
 
-         <motion.div className='project-cont' 
+         <motion.div className='project-cont'
            initial={{y:80}} 
              whileInView={{y:0}} 
              transition={{ staggerChildren: 0.5,
@@ -48,7 +48,7 @@ import clock from '../Images/clock.png';
         bounce: 0.6,}} >
       <img src= {counter} alt=''/>
            <h3>Counter App</h3>
-      <p> A counter app is an application which helps to gather  and keep track of data or number and perform different functions like increment, decrement, reset and set value. </p>
+      <p> A counter app is an application which helps to gather and keep track of data or number and perform different functions like increment, decrement, reset and set value. </p>
            <a href='https://altschool-exam-project-ruby.vercel.app/' className='project-link'>
             <FiExternalLink /> 
            </a>
@@ -60,7 +60,7 @@ import clock from '../Images/clock.png';
              transition={{ staggerChildren: 0.5,
         type: "spring",
         bounce: 0.6,}}>
-      <img src= {redactr} alt=''/>
+      <img src= {redactr} alt=''/> 
            <h3>Redactr App</h3>
       <p>This App helps you to censor words that you don't want to make public. Using this app, you can select your symbol type to replace your words with.</p>
            <a href='https://redactr-app.netlify.app/' className='project-link'>
